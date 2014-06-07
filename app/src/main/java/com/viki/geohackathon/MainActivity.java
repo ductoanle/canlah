@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 import com.viki.geohackathon.fragments.LocationFragment;
 import com.viki.geohackathon.fragments.MainFragment;
@@ -145,7 +146,9 @@ public class MainActivity extends Activity {
     // as you specify a parent activity in AndroidManifest.xml.
     int id = item.getItemId();
     if (id == R.id.action_settings) {
-        return true;
+        Intent newEventIntent = new Intent(MainActivity.this, NewEventActivity.class);
+        MainActivity.this.startActivity(newEventIntent);
+        //return true;
     }
     return super.onOptionsItemSelected(item);
   }

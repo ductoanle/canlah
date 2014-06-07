@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">GeoHackathon</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -9,6 +10,7 @@
     <string name="tab_categories">Categories</string>
     <string name="tab_location">Location</string>
     <string name="tab_events">Events</string>
-
     <string name="no_network_connection">Please check your network and try again!</string>
+    <string name="title_activity_new_event">NewEventActivity</string>
+
 </resources>
