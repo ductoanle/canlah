@@ -11,6 +11,13 @@ import com.viki.geohackathon.R;
  */
 public class Utils {
 
+  public static int getScreenWidth(Activity activity){
+    Display display = activity.getWindowManager().getDefaultDisplay();
+    DisplayMetrics outMetrics = new DisplayMetrics();
+    display.getMetrics(outMetrics);
+    return outMetrics.widthPixels;
+  }
+
   public static int getImageWidth(Activity activity) {
     Display display = activity.getWindowManager().getDefaultDisplay();
     DisplayMetrics outMetrics = new DisplayMetrics();

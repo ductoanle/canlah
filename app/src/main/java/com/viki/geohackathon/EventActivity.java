@@ -18,6 +18,7 @@ public class EventActivity extends Activity {
   private static final String TAG = "EventActivity";
 
   private ActionBar actionBar;
+  public static final String CATEGORY_ID = "category_id";
 
   @Override
   public void onCreate(Bundle savedInstanceState){
@@ -43,7 +44,7 @@ public class EventActivity extends Activity {
       ActionBar.Tab tab;
       tab = actionBar
           .newTab()
-          .setText(R.string.tab_categories)
+          .setText(R.string.tab_events)
           .setTabListener(
               new TabListener<EventsFragment>(getString(R.string.tab_events), EventsFragment.class));
       actionBar.addTab(tab);

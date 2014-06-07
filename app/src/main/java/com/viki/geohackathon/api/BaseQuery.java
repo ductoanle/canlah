@@ -21,12 +21,14 @@ public abstract class BaseQuery {
 
   private static final String TAG = "BaseQuery";
 
-  public static final String SERVER_URL = "http://vps.nero.im";
+  public static final String SERVER_URL = "http://192.168.56.1";
   //    public static final String SERVER_URL = "http://192.168.1.109:3000";
   public static final String CATEGORIES_END_POINT = "/categories";
-  public static final String EVENT_END_POINT = "/events/list";
-  public static final String EVENT_ATTEND_END_POINT = "/events/attend";
+  public static final String EVENT_END_POINT = "/event/list";
+  public static final String EVENT_ATTEND_END_POINT = "/event/attend";
   public static final String USER_END_POINT = "/users/list";
+
+  public static final String CATEGORY_ID_PARAM = "category_id";
 
 
   private String requestUrl;

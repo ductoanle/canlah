@@ -25,9 +25,8 @@ public class EventApi extends BaseApi{
     public static final int GET_EVENT_LIST = 0;
     public static final int CREATE_EVENT = 1;
 
-    //    public static final String GET_CATEGORY_LIST_URL = SERVER_URL + CATEGORIES_END_POINT + FORMAT_JSON;
-    public static final String GET_EVENT_LIST_URL = "http://geohackathon.s3.amazonaws.com/categories.json";
-    public static final String CREATE_EVENT_URL = "";
+    public static final String GET_EVENT_LIST_URL = SERVER_URL + EVENT_END_POINT;
+    public static final String CREATE_EVENT_URL = SERVER_URL + EVENT_ATTEND_END_POINT;
 
     @Override
     protected String getRequestUrlFromRequest(int request, Bundle params) throws Exception {
@@ -43,7 +42,7 @@ public class EventApi extends BaseApi{
     }
   }
 
-  public static Query getCategoriesListQuery(Context context, Bundle params) throws Exception{
+  public static Query getEventListQuery(Context context, Bundle params) throws Exception{
     return Query.prepareQuery(context, Query.GET_EVENT_LIST, params, VolleyManager.METHOD_GET);
   }
 }

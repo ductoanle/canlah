@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="actionbar_background">#FF9A00</color>
+    <color name="grey_bg_color">#ebebeb</color>
+    <color name="orange_color">#ffa900</color>
 </resources>

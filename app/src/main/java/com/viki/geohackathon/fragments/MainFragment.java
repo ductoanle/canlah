@@ -74,6 +74,7 @@ public class MainFragment extends BaseFragment {
       public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
         Intent intent = new Intent();
         intent.setClass(getActivity(), EventActivity.class);
+        intent.putExtra(EventActivity.CATEGORY_ID, categoryItemAdapter.getItem(position).getId());
         startActivity(intent);
       }
     });
@@ -84,7 +85,6 @@ public class MainFragment extends BaseFragment {
 
   @Override
   public void execute() {
-    Log.i(TAG, "Running execute");
     show(LOADING);
     categoriesView.setVisibility(View.GONE);
     try{

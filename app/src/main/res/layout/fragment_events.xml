@@ -12,6 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:dividerHeight="10dp"
+        android:divider="@color/grey_bg_color"
     />
     <TextView
         android:id="@+id/event_empty"
