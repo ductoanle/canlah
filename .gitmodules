@@ -1,0 +1,9 @@
+[submodule "volley"]
+	path = volley
+	url = https://github.com/ductoanle/volley-network
+[submodule "DataDroid"]
+	path = DataDroid
+	url = https://github.com/foxykeep/DataDroid.git
+[submodule "el-libs"]
+	path = el-libs
+	url = https://github.com/ductoanle/el-android-lib.git

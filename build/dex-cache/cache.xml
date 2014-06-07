@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/classes-a71219b9f2ff87c8d4c31bc414a3e74197da0456.jar"
+        jar="/Users/ductoanle/Workspace/Android/GeoHackathon/build/exploded-aar/GeoHackathon/DataDroid/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.0.2"
+        sha1="4d46a9432956042d43c506b1cc448c74c67ec3f8"/>
+    <item
+        dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/support-v4-19.0.1-124a0ee3c60b21f040401798428daf5db701a549.jar"
+        jar="/Users/ductoanle/Development/android-sdk/extras/android/m2repository/com/android/support/support-v4/19.0.1/support-v4-19.0.1.jar"
+        jumboMode="false"
+        revision="19.0.2"
+        sha1="587da9a481ffd341d2fa091704489b89845ddacd"/>
+    <item
+        dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/gson-2.2.2-1b53ad1f2db2e6070afec496e7df9c59de7415a8.jar"
+        jar="/Users/ductoanle/Workspace/Android/GeoHackathon/build/exploded-aar/GeoHackathon/el-libs/unspecified/libs/gson-2.2.2.jar"
+        jumboMode="false"
+        revision="19.0.2"
+        sha1="53bfcd3c8e310d1493b2691484525ed90b04e236"/>
+    <item
+        dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/classes-a397be11566452156799f4c9e821dfef9b66aa80.jar"
+        jar="/Users/ductoanle/Workspace/Android/GeoHackathon/build/exploded-aar/GeoHackathon/el-libs/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.0.2"
+        sha1="0111f52d581d8345c6eff5cd8a5e35b086cc00ea"/>
+    <item
+        dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/classes-ca375ccb1c2b7d26c321bde148c74772baac8c51.jar"
+        jar="/Users/ductoanle/Workspace/Android/GeoHackathon/build/exploded-aar/com.google.android.gms/play-services/4.3.23/classes.jar"
+        jumboMode="false"
+        revision="19.0.2"
+        sha1="7676c0cb230efa6ac41c47867d372ed5913029d4"/>
+    <item
+        dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/classes-c5b123ac150fd5d9f1305035074705eb6d497d5a.jar"
+        jar="/Users/ductoanle/Workspace/Android/GeoHackathon/build/exploded-aar/GeoHackathon/volley/unspecified/classes.jar"
+        jumboMode="false"
+        revision="19.0.2"
+        sha1="79087bd3349cfb2209e3a066bd96b62bbb42c657"/>
+
+</pre-dex-items>

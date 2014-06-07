@@ -1,0 +1,29 @@
+apply plugin: 'android'
+
+android {
+  compileSdkVersion 19
+  buildToolsVersion '19.0.2'
+  defaultConfig {
+    packageName 'com.viki.geohackathon'
+    minSdkVersion 14
+    targetSdkVersion 19
+    versionCode 1
+    versionName '1.0'
+  }
+  buildTypes {
+    release {
+      runProguard false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+  productFlavors {
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  compile project(':DataDroid')
+  compile project(':volley')
+  compile project(':el-libs')
+  compile 'com.google.android.gms:play-services:+'
+}

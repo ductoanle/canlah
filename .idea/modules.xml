@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DataDroid/DataDroid.iml" filepath="$PROJECT_DIR$/DataDroid/DataDroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GeoHackathon.iml" filepath="$PROJECT_DIR$/GeoHackathon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/el-libs/el-libs.iml" filepath="$PROJECT_DIR$/el-libs/el-libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
+    </modules>
+  </component>
+</project>
+

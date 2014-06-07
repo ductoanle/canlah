@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <com.google.android.gms.maps.MapView
+      xmlns:map="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/map"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:title="com.google.android.gms.maps.MapFragment"
+      map:cameraTargetLat="1.2896700"
+      map:cameraTargetLng="103.8500700"
+      map:mapType="normal"
+      map:cameraZoom="14"
+      tools:layout="@layout/fragment_location"/>
+</FrameLayout>
