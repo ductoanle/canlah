@@ -27,10 +27,11 @@ public class Event implements Parcelable{
   private static final String TIME_JSON = "time";
   private static final String ADDRESS_JSON = "address";
   private static final String LATITUDE_JSON = "latitude";
-  private static final String LONGTITUDE_JSON = "longtitude";
+  private static final String LONGTITUDE_JSON = "longitude";
   private static final String N_PEOPLE_JSON = "n_people";
   private static final String HOST_NAME_JSON = "hostName";
   private static final String COVER_JSON = "cover";
+  private static final String CATEGORY_JSON = "category";
 
   private int id;
   private String description;
@@ -44,8 +45,9 @@ public class Event implements Parcelable{
   private int n_people;
   private String hostName;
   private String cover;
+  private int categoryId;
 
-  public Event(int id, String description, String privacy, String activity, String tags, String time, String address, double latitude, double longtitude, int n_people, String hostName, String cover) {
+  public Event(int id, String description, String privacy, String activity, String tags, String time, String address, double latitude, double longtitude, int n_people, String hostName, String cover, int categoryId) {
     this.id = id;
     this.description = description;
     this.privacy = privacy;
@@ -58,6 +60,7 @@ public class Event implements Parcelable{
     this.n_people = n_people;
     this.hostName = hostName;
     this.cover = cover;
+    this.categoryId = categoryId;
   }
 
   public static List<Event> fromJSONArray(JSONArray jsonArray) throws JSONException {
@@ -74,12 +77,17 @@ public class Event implements Parcelable{
   }
 
   public static Event fromJSON(JSONObject jsonObj){
+    JSONObject category = jsonObj.optJSONObject(CATEGORY_JSON);
+    int category_id = 0;
+    if (category != null){
+      category_id = category.optInt(ID_JSON);
+    }
     return new Event(jsonObj.optInt(ID_JSON), jsonObj.optString(DESCRIPTION_JSON),
                      jsonObj.optString(PRIVACY_JSON), jsonObj.optString(ACTIVITY_JSON),
                      jsonObj.optString(TAGS_JSON), jsonObj.optString(TIME_JSON),
                      jsonObj.optString(ADDRESS_JSON), jsonObj.optDouble(LATITUDE_JSON),
-                     jsonObj.optDouble(LATITUDE_JSON), jsonObj.optInt(N_PEOPLE_JSON),
-                     jsonObj.optString(HOST_NAME_JSON), jsonObj.optString(COVER_JSON));
+                     jsonObj.optDouble(LONGTITUDE_JSON), jsonObj.optInt(N_PEOPLE_JSON),
+                     jsonObj.optString(HOST_NAME_JSON), jsonObj.optString(COVER_JSON), category_id);
   }
 
 
@@ -183,6 +191,14 @@ public class Event implements Parcelable{
     this.cover = cover;
   }
 
+  public int getCategoryId() {
+    return categoryId;
+  }
+
+  public void setCategoryId(int categoryId) {
+    this.categoryId = categoryId;
+  }
+
   @Override
   public int describeContents() {
     return 0;
@@ -202,6 +218,7 @@ public class Event implements Parcelable{
     out.writeInt(n_people);
     out.writeString(hostName);
     out.writeString(cover);
+    out.writeInt(categoryId);
   }
 
   public void readFromParcel(Parcel in){
@@ -217,6 +234,7 @@ public class Event implements Parcelable{
     n_people = in.readInt();
     hostName = in.readString();
     cover = in.readString();
+    categoryId = in.readInt();
   }
 
   public static final Parcelable.Creator<Event> CREATOR = new Parcelable.Creator<Event>() {

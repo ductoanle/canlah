@@ -2,9 +2,11 @@ package com.viki.geohackathon;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -145,11 +147,33 @@ public class MainActivity extends Activity {
     // automatically handle clicks on the Home/Up button, so long
     // as you specify a parent activity in AndroidManifest.xml.
     int id = item.getItemId();
-    if (id == R.id.action_settings) {
+    switch(id){
+      case R.id.action_settings:
         Intent newEventIntent = new Intent(MainActivity.this, NewEventActivity.class);
         MainActivity.this.startActivity(newEventIntent);
-        //return true;
+        return true;
+      case android.R.id.home:
+        alertOnExit();
+        return true;
     }
     return super.onOptionsItemSelected(item);
+  }
+
+  @Override
+  public void onBackPressed() {
+    alertOnExit();
+  }
+
+  private void alertOnExit(){
+    new AlertDialog.Builder(this)
+        .setMessage(getString(R.string.exit_message))
+        .setCancelable(false)
+        .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+          public void onClick(DialogInterface dialog, int id) {
+            finish();
+          }
+        })
+        .setNegativeButton(getString(R.string.no), null)
+        .show();
   }
 }

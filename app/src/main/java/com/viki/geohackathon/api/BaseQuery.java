@@ -20,8 +20,8 @@ import java.util.LinkedHashMap;
 public abstract class BaseQuery {
 
   private static final String TAG = "BaseQuery";
-
-  public static final String SERVER_URL = "http://192.168.56.1";
+  public static final String SERVER_URL = "http://vps.nero.im";
+//  public static final String SERVER_URL = "http://192.168.56.1";
   //    public static final String SERVER_URL = "http://192.168.1.109:3000";
   public static final String CATEGORIES_END_POINT = "/categories";
   public static final String EVENT_END_POINT = "/event/list";

@@ -32,11 +32,12 @@
             android:label="@string/title_activity_new_event"
             android:screenOrientation="portrait" >
         </activity>
-        <activity
-            android:name=".EventActivity"
-            android:label="@string/title_activity_event"
-            android:screenOrientation="portrait" />
-
+        <activity android:name=".EventActivity"
+             android:label="@string/title_activity_event"
+             android:screenOrientation="portrait"/>
+        <activity android:name=".EventInfoActivity"
+                  android:label="@string/title_activity_event_info"
+                  android:screenOrientation="portrait"/>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

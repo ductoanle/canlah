@@ -1,5 +1,6 @@
 package com.viki.geohackathon.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.ethan.libs.utils.Log;
 import com.viki.geohackathon.EventActivity;
+import com.viki.geohackathon.EventInfoActivity;
 import com.viki.geohackathon.R;
 import com.viki.geohackathon.adapters.EventItemAdapter;
 import com.viki.geohackathon.api.EventApi;
@@ -56,7 +58,10 @@ public class EventsFragment extends BaseFragment{
     eventsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
       @Override
       public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-
+        Intent intent = new Intent();
+        intent.setClass(getActivity(), EventInfoActivity.class);
+        intent.putExtra(EventInfoActivity.EVENT_PARAM, eventItemAdapter.getItem(position));
+        startActivity(intent);
       }
     });
     loadCategoryId();

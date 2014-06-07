@@ -10,8 +10,17 @@ android {
     versionCode 1
     versionName '1.0'
   }
+  signingConfigs {
+    release {
+      storeFile file("../.keystore/geohackathon.keystore")
+      storePassword "geohackathon"
+      keyAlias "geohackathon"
+      keyPassword "geohackathon"
+    }
+  }
   buildTypes {
     release {
+      signingConfig signingConfigs.release
       runProguard false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }

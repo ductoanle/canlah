@@ -10,9 +10,9 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:title="com.google.android.gms.maps.MapFragment"
-      map:cameraTargetLat="1.2896700"
-      map:cameraTargetLng="103.8500700"
+      map:cameraTargetLat="1.2825351"
+      map:cameraTargetLng="103.8456456"
       map:mapType="normal"
-      map:cameraZoom="14"
+      map:cameraZoom="15"
       tools:layout="@layout/fragment_location"/>
 </FrameLayout>
