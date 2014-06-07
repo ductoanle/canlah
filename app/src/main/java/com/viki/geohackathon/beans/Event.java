@@ -3,8 +3,6 @@ package com.viki.geohackathon.beans;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.Date;
-
 /**
  * Created by ductoanle on 7/6/14.
  */
@@ -15,8 +13,8 @@ public class Event implements Parcelable{
   private int id;
   private String activity;
   private String privacy;
-  private Date startTime;
-  private Date endTime;
+  private String startTime;
+  private String endTime;
   private String address;
   private double latitude;
   private double longtitude;
@@ -24,7 +22,7 @@ public class Event implements Parcelable{
   private int n_people;
   private String hostName;
 
-  public Event(int id, String activity, String privacy, Date startTime, Date endTime, String address, double latitude, double longtitude, String description, int n_people, String hostName) {
+  public Event(int id, String activity, String privacy, String startTime, String endTime, String address, double latitude, double longtitude, String description, int n_people, String hostName) {
     this.id = id;
     this.activity = activity;
     this.privacy = privacy;
@@ -66,19 +64,19 @@ public class Event implements Parcelable{
     this.privacy = privacy;
   }
 
-  public Date getStartTime() {
+  public String getStartTime() {
     return startTime;
   }
 
-  public void setStartTime(Date startTime) {
+  public void setStartTime(String startTime) {
     this.startTime = startTime;
   }
 
-  public Date getEndTime() {
+  public String getEndTime() {
     return endTime;
   }
 
-  public void setEndTime(Date endTime) {
+  public void setEndTime(String endTime) {
     this.endTime = endTime;
   }
 
@@ -154,8 +152,8 @@ public class Event implements Parcelable{
     id = in.readInt();
     activity = in.readString();
     privacy = in.readString();
-    startTime = (Date) in.readSerializable();
-    endTime = (Date) in.readSerializable();
+    startTime = in.readString();
+    endTime = in.readString();
     address = in.readString();
     latitude = in.readDouble();
     longtitude = in.readDouble();

@@ -21,11 +21,13 @@ public abstract class BaseQuery {
 
   private static final String TAG = "BaseQuery";
 
-  public static final String SERVER_URL = "http://smart-commerce.herokuapp.com";
+  public static final String SERVER_URL = "http://vps.nero.im";
   //    public static final String SERVER_URL = "http://192.168.1.109:3000";
   public static final String CATEGORIES_END_POINT = "/categories";
-  public static final String EVENT_END_POINTS = "/events";
-  public static final String FORMAT_JSON = ".json";
+  public static final String EVENT_END_POINT = "/events/list";
+  public static final String EVENT_ATTEND_END_POINT = "/events/attend";
+  public static final String USER_END_POINT = "/users/list";
+
 
   private String requestUrl;
   private LinkedHashMap<String, String> parameters;

@@ -53,9 +53,9 @@ public class MainActivity extends Activity {
       // Lens
       tab = actionBar
           .newTab()
-          .setText(R.string.tab_main)
+          .setText(R.string.tab_categories)
           .setTabListener(
-              new TabListener<MainFragment>(getString(R.string.tab_main), MainFragment.class));
+              new TabListener<MainFragment>(getString(R.string.tab_categories), MainFragment.class));
       actionBar.addTab(tab);
 
       tab = actionBar

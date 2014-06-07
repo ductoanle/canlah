@@ -8,6 +8,12 @@
         revision="19.0.2"
         sha1="4d46a9432956042d43c506b1cc448c74c67ec3f8"/>
     <item
+        dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/classes-8f30b6032d97f7f254b004146421c8e45f857082.jar"
+        jar="/Users/ductoanle/Workspace/Android/GeoHackathon/build/exploded-aar/com.google.android.gms/play-services/4.4.52/classes.jar"
+        jumboMode="false"
+        revision="19.0.2"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
+    <item
         dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/support-v4-19.0.1-124a0ee3c60b21f040401798428daf5db701a549.jar"
         jar="/Users/ductoanle/Development/android-sdk/extras/android/m2repository/com/android/support/support-v4/19.0.1/support-v4-19.0.1.jar"
         jumboMode="false"
@@ -25,12 +31,6 @@
         jumboMode="false"
         revision="19.0.2"
         sha1="0111f52d581d8345c6eff5cd8a5e35b086cc00ea"/>
-    <item
-        dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/classes-ca375ccb1c2b7d26c321bde148c74772baac8c51.jar"
-        jar="/Users/ductoanle/Workspace/Android/GeoHackathon/build/exploded-aar/com.google.android.gms/play-services/4.3.23/classes.jar"
-        jumboMode="false"
-        revision="19.0.2"
-        sha1="7676c0cb230efa6ac41c47867d372ed5913029d4"/>
     <item
         dex="/Users/ductoanle/Workspace/Android/GeoHackathon/app/build/pre-dexed/debug/classes-c5b123ac150fd5d9f1305035074705eb6d497d5a.jar"
         jar="/Users/ductoanle/Workspace/Android/GeoHackathon/build/exploded-aar/GeoHackathon/volley/unspecified/classes.jar"

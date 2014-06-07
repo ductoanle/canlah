@@ -19,7 +19,7 @@ public class Category implements Parcelable{
   private static final String TAG = "Category";
 
   private static final String ID_JSON = "id";
-  private static final String TITLE_JSON = "name";
+  private static final String TITLE_JSON = "title";
   private static final String IMAGE_URL_JSON = "image";
 
   private int id;

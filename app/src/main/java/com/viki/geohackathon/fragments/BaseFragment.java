@@ -2,6 +2,7 @@ package com.viki.geohackathon.fragments;
 
 import android.app.Fragment;
 import android.view.View;
+import android.widget.ImageView;
 
 /**
  * Created by ductoanle on 7/6/14.
@@ -12,6 +13,7 @@ public abstract class BaseFragment extends Fragment implements BaseFragmentView{
   protected View loadingPagination;
   protected View loadingPaginationError;
   protected View viewContainer;
+  protected ImageView refreshBtn;
 
   @Override
   public void show(int status) {

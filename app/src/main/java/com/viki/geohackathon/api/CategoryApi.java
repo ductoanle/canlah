@@ -24,8 +24,7 @@ public class CategoryApi extends BaseApi{
 
     public static final int GET_CATEGORY_LIST = 0;
 
-//    public static final String GET_CATEGORY_LIST_URL = SERVER_URL + CATEGORIES_END_POINT + FORMAT_JSON;
-    public static final String GET_CATEGORY_LIST_URL = "http://geohackathon.s3.amazonaws.com/categories.json";
+    public static final String GET_CATEGORY_LIST_URL = SERVER_URL + CATEGORIES_END_POINT;
 
     @Override
     protected String getRequestUrlFromRequest(int request, Bundle params) throws Exception {
