@@ -6,4 +6,8 @@ app/build
 DataDroid/build
 el-libs/build
 volley/build
-
+.idea/libraries/play_services_4_4_52.xml
+DataDroid/
+el-libs/
+volley/
+build/
